@@ -1,0 +1,106 @@
+@media  (max-width: 780px) {
+    main #sobre .campo_descricao img{
+        width: 250px;
+    }
+    header{
+        z-index: 1;
+    }
+    nav{
+        display: block;
+        width: 100%;
+        z-index: 0;
+        background-color:#332222;
+        top:0;
+    }
+    main #sobre .campo_descricao img{
+        position: relative;
+        top: 50%;
+        transform: translateY(15%);
+    }
+}
+@media (max-width: 700px){
+    main #catalogo .cards_catalogo ul{
+        columns: 2;
+    }
+    main #cardapio table{
+        font-size: 1.5em;
+        margin: auto;
+        max-width: 420px;
+    }
+}
+@media (max-width:600px){
+    main .descricao{
+        display: none;
+    }
+    main #formulario form{
+        max-width: 380px;
+        
+    }   
+    main #formulario .campo_form{
+        width: 60%;
+        margin: 10px auto;
+    }
+}
+@media (max-width: 470px){
+    main #sobre .campo_descricao img{
+        display: none;
+    }
+    main #sobre .campo_descricao p{
+        width: 100%;
+        display: block; 
+    }
+    main #sobre .campo_descricao:nth-child(even) p{
+        float: left;
+    }
+    main #catalogo .cards_catalogo ul li{
+        width: 150px;
+    }
+    main #catalogo .cards_catalogo img{
+        width: 150px;
+        height: 120px;
+    }
+    main #cardapio table{
+        font-size: 1em;
+        margin: auto;
+        max-width: 350px;
+    }
+    main #formulario .campo_form{
+        width: 70%;
+    }
+}
+@media (max-width: 400px){
+    main #formulario form{
+        max-width: 280px;   
+    }  
+    main #formulario .campo_form{
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+@media (max-width: 370px){
+    header{
+        text-align: center;
+    }
+    header .redes_sociais{
+        display: none;
+    }
+    main #catalogo .cards_catalogo ul li{
+        width: 130px;
+        font-size: 0.6em;
+    }
+    main #catalogo .cards_catalogo img{
+        width: 130px;
+        height: 120px;
+    }   
+    main #cardapio table{
+        margin: auto;
+        max-width: 250px;
+    } 
+    main #formulario form{
+        max-width: 230px; 
+    }  
+    main #formulario .campo_form{
+        width: 100%;
+        margin: 10px auto;
+    }
+}

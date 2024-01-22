@@ -1,0 +1,271 @@
+:root{
+    --cor1: #ff5757;
+    --cor2: #8b57a9;
+    --cor3: #CC6E6E;
+    --cor4: #332222;
+    --cor5: #997171;
+
+    --fonte-padrao: "Poppins", sans-serif;
+    --fonte-destaque: 'Lilita One', sans-serif;
+}
+html{
+    background-color: var(--cor5);
+    scroll-behavior: smooth;
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+}
+header{
+    background-color: var(--cor4);
+    padding: 5px;
+    top: 0;
+    position: sticky;
+}
+header img{
+    width: 200px;
+}
+header{
+    background-color: #332222;
+}
+header > .campo_logo, header .redes_sociais{
+    display: inline-block;    
+}
+header .redes_sociais{
+    float: right; 
+    padding-top: 5px;
+    position: relative;
+    top: 50%;
+    transform: translateY(25%); 
+    
+}
+header .redes_sociais button{
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.s ease-in-out;
+}
+header .redes_sociais button:hover{
+    transform: scale(1.05);
+}
+header .redes_sociais img{
+    width: 20px;
+    margin: 0 10px;
+}
+nav{
+    width: 480px;
+    margin: auto;
+    top: -38px;
+    position: relative;
+    text-align: center;
+}
+nav a{
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav a:hover{
+    color: var(--cor1);
+    text-decoration: underline;
+}
+main .titulo_topico{
+    text-align: center;
+    padding: 15px;
+    font-family: var(--fonte-destaque);
+}
+main .descricao{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/imagem_fundo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main #sobre{
+    max-width: 980px;
+    margin: auto;
+    color: white;
+}
+main #sobre .campo_descricao{
+    margin: auto;
+    display: inline-block;
+    margin: 10px auto;
+    padding: 10px;
+}
+main #sobre .campo_descricao p{
+    width: 40%;
+    display: inline-block;
+    margin: 0 auto; 
+}
+main #sobre .campo_descricao img{
+    width: 300px;
+
+}
+main #sobre .campo_descricao:nth-child(even) p{
+    float: right;
+}
+main #sobre .campo_descricao:nth-child(odd) img{    
+    float: right;
+}
+
+main #catalogo .cards_catalogo ul{
+    max-width: 980px;
+    columns: 3;
+    list-style-type: none;
+    margin: 0 auto;
+}
+main #catalogo .cards_catalogo ul li{
+    width: 220px;
+    margin: 10px;
+    padding: 0 0 8px 0;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 0.8em;
+    background-color: var(--cor4);
+    color: white;
+}
+main #catalogo .cards_catalogo ul li .titulo_card{
+    display: block;
+    font-family: var(--fonte-destaque);
+    background-color: var(--cor2);
+    margin-bottom: 5px;
+    padding: 0 2px;
+    font-size: 1.2em;
+}
+main #catalogo .cards_catalogo img{
+    width: 220px;
+    height: 170px;
+    border-radius: 15px 15px 0 0;
+}
+main #catalogo, #cardapio{
+    background-color: whitesmoke;
+}
+
+main #cardapio{
+    padding: 50px 0;
+}
+main #cardapio table{
+    font-size: 1.5em;
+    margin: auto;
+}
+main #cardapio table ,tr, td, th{
+    padding: 5px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+main #cardapio table th{
+    font-family: var(--fonte-destaque);
+}
+main #cardapio table thead th{
+    background-color: var(--cor1);
+}
+main #cardapio table tbody th{
+    background-color: var(--cor2);
+}
+main #cardapio table .linha2 th{
+    background-color: var(--cor5);
+}
+main #cardapio table tr:nth-child(odd){
+    background-color: lightgrey;
+}
+
+
+main #formulario form{
+    background-color: var(--cor1);
+    max-width: 480px;
+    padding: 10px;
+    border: 2px solid var(--cor4);
+    border-radius: 20px;
+    margin: 30px auto 50px auto;
+}
+main #formulario .campo_form{
+    width: 50%;
+    margin: 10px auto;
+}
+main #formulario .campo_form input[type="text"],[type="email"]{ 
+    height: 20px;
+    padding: 2px;
+    float: right;
+    border: none;
+    border-radius: 5px;
+}
+main #formulario .botao_check{
+    margin: 10px;
+    display: block;
+    text-align: center;
+}
+main #formulario .campo_submit{
+    text-align: center;
+}
+main #formulario button{
+    width: 150px;
+    padding: 5px;
+    background-color: var(--cor2);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    cursor: pointer;
+}
+main #formulario button:hover{
+    color: var(--cor4);
+    transform: scale(1.05);
+}
+
+
+
+footer{
+    font-family: var(--fonte_destaque);
+    background-color: var(--cor4);
+    text-align: center;
+    padding-top: 10px;
+}
+footer .email{
+    font-family: var(--fonte-destaque);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+footer .container {
+    width: 100%;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+footer .logo img {
+    width: 300px;
+    border-radius: 100%;
+}
+  
+footer .contact-info p {
+    color: white;
+    font-size: 14px;
+    margin: 5px 0;
+}
+  
+footer .links h4 {
+    margin-top: 10px;
+    color: var(--cor2);
+}
+  
+footer .links ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5px;
+}
+  
+footer .links ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+footer .links ul li a {
+    color: white;
+    text-decoration: none;
+}
+  
+footer .links ul li a:hover {
+    color: var(--cor3);
+    text-decoration: underline;
+}
