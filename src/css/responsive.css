@@ -69,15 +69,6 @@
     }
 }
 @media (max-width: 400px){
-    main #formulario form{
-        max-width: 280px;   
-    }  
-    main #formulario .campo_form{
-        width: 80%;
-        margin: 10px auto;
-    }
-}
-@media (max-width: 370px){
     header{
         text-align: center;
     }
@@ -96,6 +87,13 @@
         margin: auto;
         max-width: 250px;
     } 
+    main #formulario form{
+        max-width: 280px;   
+    }  
+    main #formulario .campo_form{
+        width: 80%;
+        margin: 10px auto;
+    }
     main #formulario form{
         max-width: 230px; 
     }  
